@@ -10,4 +10,7 @@ struct OSVERSION
 	unsigned int uBuildNum{ 0 };
 };
 
+/**
+** @brief 获取系统版本号信息
+*/
 extern bool GetOSVersion(OSVERSION & OSVer);

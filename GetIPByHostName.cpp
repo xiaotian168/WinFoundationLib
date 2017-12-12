@@ -1,6 +1,9 @@
 
 #include "GetIPByHostName.h"
+
+#define WIN32_LEAN_AND_MEAN
 #include "WFLibConfig.h"
+#include <Winsock2.h>
 
 bool GetIPByHostNameA(const char * szHostName, char * szIP, const unsigned int dwSize)
 {

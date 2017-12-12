@@ -71,7 +71,7 @@ bool WriteModulePathToRegW(const HKEY hKeyRoot, const wchar_t * szSubKey, const 
 	return bRet;
 }
 
-bool ReadModulePathFromRegA(const HKEY hKeyRoot, const char * szSubKey, const char * szValueName, char * szModulePath, const DWORD dwSize)
+bool ReadModulePathFromRegA(const HKEY hKeyRoot, const char * szSubKey, const char * szValueName, char * szModulePath, const unsigned int uSize)
 {
 	bool bRet = false;
 	HKEY hKey = NULL;
@@ -80,7 +80,7 @@ bool ReadModulePathFromRegA(const HKEY hKeyRoot, const char * szSubKey, const ch
 	DWORD dwDataSize = 0;
 	FILE * pFile = NULL;
 
-	if (NULL != hKeyRoot && NULL != szSubKey && NULL != szValueName && NULL != szModulePath && 0 != dwSize)
+	if (NULL != hKeyRoot && NULL != szSubKey && NULL != szValueName && NULL != szModulePath && 0 != uSize)
 	{
 		nRet = RegOpenKeyExA(hKeyRoot, szSubKey, 0, KEY_READ | KEY_WOW64_64KEY, &hKey);
 
@@ -92,7 +92,7 @@ bool ReadModulePathFromRegA(const HKEY hKeyRoot, const char * szSubKey, const ch
 		if (ERROR_SUCCESS == nRet && NULL != hKey)
 		{
 			dwValueType = REG_SZ;
-			dwDataSize = dwSize;
+			dwDataSize = uSize;
 
 			nRet = RegQueryValueExA(hKey, szValueName, NULL, &dwValueType, (LPBYTE)szModulePath, (LPDWORD)&dwDataSize);
 
@@ -113,7 +113,7 @@ bool ReadModulePathFromRegA(const HKEY hKeyRoot, const char * szSubKey, const ch
 	return bRet;
 }
 
-bool ReadModulePathFromRegW(const HKEY hKeyRoot, const wchar_t * szSubKey, const wchar_t * szValueName, wchar_t * szModulePath, const DWORD dwSize)
+bool ReadModulePathFromRegW(const HKEY hKeyRoot, const wchar_t * szSubKey, const wchar_t * szValueName, wchar_t * szModulePath, const unsigned int uSize)
 {
 	bool bRet = false;
 	HKEY hKey = NULL;
@@ -122,7 +122,7 @@ bool ReadModulePathFromRegW(const HKEY hKeyRoot, const wchar_t * szSubKey, const
 	DWORD dwDataSize = 0;
 	FILE * pFile = NULL;
 
-	if (NULL != hKeyRoot && NULL != szSubKey && NULL != szValueName && NULL != szModulePath && 0 != dwSize)
+	if (NULL != hKeyRoot && NULL != szSubKey && NULL != szValueName && NULL != szModulePath && 0 != uSize)
 	{
 		nRet = RegOpenKeyExW(hKeyRoot, szSubKey, 0, KEY_READ | KEY_WOW64_64KEY, &hKey);
 
@@ -134,7 +134,7 @@ bool ReadModulePathFromRegW(const HKEY hKeyRoot, const wchar_t * szSubKey, const
 		if (ERROR_SUCCESS == nRet && NULL != hKey)
 		{
 			dwValueType = REG_SZ;
-			dwDataSize = dwSize;
+			dwDataSize = uSize;
 
 			nRet = RegQueryValueExW(hKey, szValueName, NULL, &dwValueType, (LPBYTE)szModulePath, (LPDWORD)&dwDataSize);
 

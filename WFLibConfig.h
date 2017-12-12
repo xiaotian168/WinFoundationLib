@@ -18,9 +18,10 @@
 #endif
 
 #define INITGUID
-#include <tchar.h>
-#include <Winsock2.h>
 #include <Windows.h>
+#include <mmsystem.h>
+#include <tchar.h>
+#include <shellapi.h>
 #include <shobjidl.h>
 #include <shlobj.h>
 #include <shlwapi.h>
@@ -41,3 +42,4 @@
 #pragma comment(lib, "shlwapi.lib")
 #pragma comment(lib, "Kernel32.lib")
 #pragma comment(lib, "Psapi.lib")
+#pragma comment(lib, "Winmm.lib")

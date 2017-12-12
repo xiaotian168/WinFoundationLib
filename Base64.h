@@ -1,11 +1,9 @@
 
 #pragma once
 
-#define USE_STD_STRING_BASE64
+#include "WFLibConfig.h"
 
-#if defined USE_STD_STRING_BASE64
-#	include <string>
-#endif
+#define USE_STD_STRING_BASE64
 
 /**
 ** @brief 计算指定长度的内容会产生多长的 Base64 字符串
