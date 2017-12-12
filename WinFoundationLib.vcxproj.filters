@@ -17,5 +17,142 @@
     <ClInclude Include="WFLib.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="RandomString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalcTextSize.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowMessageFilter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="URLChar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CIconCache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CUnicodeString2StdMultiByteString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumFont.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetOSVersion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeFullPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Profile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HICON2GdipBitmap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetIPByHostName.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateShortcut.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetFileList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalcFileSize.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ExecuteWarning.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleRegPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FormatSoftSizeString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FormatDriveFreeSpaceString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IsPathWritable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcessWndMsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Base64.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomString.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalcTextSize.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowMessageFilter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="URLChar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CIconCache.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CUnicodeString2StdMultiByteString.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumFont.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GetOSVersion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MakeFullPath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HICON2GdipBitmap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GetIPByHostName.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateShortcut.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GetFileList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalcFileSize.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExecuteWarning.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleRegPath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FormatSoftSizeString.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FormatDriveFreeSpaceString.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IsPathWritable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcessWndMsg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -11,25 +11,73 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Base64.h" />
+    <ClInclude Include="CalcFileSize.h" />
+    <ClInclude Include="CalcTextSize.h" />
+    <ClInclude Include="CIconCache.h" />
+    <ClInclude Include="CreateShortcut.h" />
+    <ClInclude Include="CUnicodeString2StdMultiByteString.h" />
+    <ClInclude Include="EnumFont.h" />
+    <ClInclude Include="ExecuteWarning.h" />
+    <ClInclude Include="FormatDriveFreeSpaceString.h" />
+    <ClInclude Include="FormatSoftSizeString.h" />
+    <ClInclude Include="GetFileList.h" />
+    <ClInclude Include="GetIPByHostName.h" />
+    <ClInclude Include="GetOSVersion.h" />
+    <ClInclude Include="HICON2GdipBitmap.h" />
+    <ClInclude Include="IsPathWritable.h" />
+    <ClInclude Include="MakeFullPath.h" />
+    <ClInclude Include="ModuleRegPath.h" />
+    <ClInclude Include="PostProcessWndMsg.h" />
+    <ClInclude Include="Profile.h" />
+    <ClInclude Include="RandomString.h" />
+    <ClInclude Include="TaskBar.h" />
+    <ClInclude Include="URLChar.h" />
     <ClInclude Include="WFLib.h" />
     <ClInclude Include="WFLibConfig.h" />
+    <ClInclude Include="WindowMessageFilter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Base64.cpp" />
+    <ClCompile Include="CalcFileSize.cpp" />
+    <ClCompile Include="CalcTextSize.cpp" />
+    <ClCompile Include="CIconCache.cpp" />
+    <ClCompile Include="CreateShortcut.cpp" />
+    <ClCompile Include="CUnicodeString2StdMultiByteString.cpp" />
+    <ClCompile Include="EnumFont.cpp" />
+    <ClCompile Include="ExecuteWarning.cpp" />
+    <ClCompile Include="FormatDriveFreeSpaceString.cpp" />
+    <ClCompile Include="FormatSoftSizeString.cpp" />
+    <ClCompile Include="GetFileList.cpp" />
+    <ClCompile Include="GetIPByHostName.cpp" />
+    <ClCompile Include="GetOSVersion.cpp" />
+    <ClCompile Include="HICON2GdipBitmap.cpp" />
+    <ClCompile Include="IsPathWritable.cpp" />
+    <ClCompile Include="MakeFullPath.cpp" />
+    <ClCompile Include="ModuleRegPath.cpp" />
+    <ClCompile Include="PostProcessWndMsg.cpp" />
+    <ClCompile Include="RandomString.cpp" />
+    <ClCompile Include="TaskBar.cpp" />
+    <ClCompile Include="URLChar.cpp" />
+    <ClCompile Include="WindowMessageFilter.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{505BBE50-B2A0-48F6-A8D1-295C9D80B415}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>WinFoundationLib</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -51,6 +99,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -66,6 +115,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

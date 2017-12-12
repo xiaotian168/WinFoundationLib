@@ -16,3 +16,28 @@
 #		define WF_CAPI extern "C" __declspec(dllimport)
 #	endif
 #endif
+
+#define INITGUID
+#include <tchar.h>
+#include <Winsock2.h>
+#include <Windows.h>
+#include <shobjidl.h>
+#include <shlobj.h>
+#include <shlwapi.h>
+#include <shlguid.h>
+#include <TlHelp32.h>
+#include <Psapi.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <Gdiplus.h>
+#include <assert.h>
+#include <memory.h>
+#include <list>
+#include <string>
+
+#pragma comment(lib, "Gdiplus.lib")
+#pragma comment(lib, "ws2_32.lib")
+#pragma comment(lib, "shell32.lib")
+#pragma comment(lib, "shlwapi.lib")
+#pragma comment(lib, "Kernel32.lib")
+#pragma comment(lib, "Psapi.lib")
