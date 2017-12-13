@@ -101,6 +101,30 @@
     <ClInclude Include="RunAppWait.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SockConnectWithTimeOut.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitFileNotExist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteFileRecurse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildTempFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetSystemDrive.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteModuleDirectoryFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SetEventByName.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildDirectoryPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base64.cpp">
@@ -182,6 +206,30 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="RunAppWait.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SockConnectWithTimeOut.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitFileNotExist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteFileRecurse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildTempFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GetSystemDrive.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteModuleDirectoryFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetEventByName.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildDirectoryPath.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

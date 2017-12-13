@@ -12,6 +12,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base64.h" />
+    <ClInclude Include="BuildDirectoryPath.h" />
+    <ClInclude Include="BuildTempFile.h" />
     <ClInclude Include="CalcFileSize.h" />
     <ClInclude Include="CalcTextSize.h" />
     <ClInclude Include="CIconCache.h" />
@@ -19,6 +21,8 @@
     <ClInclude Include="CStartMenuProgramGroup.h" />
     <ClInclude Include="CUnicodeString2StdMultiByteString.h" />
     <ClInclude Include="DeleteDesktopFile.h" />
+    <ClInclude Include="DeleteFileRecurse.h" />
+    <ClInclude Include="DeleteModuleDirectoryFile.h" />
     <ClInclude Include="EnumFont.h" />
     <ClInclude Include="ExecuteWarning.h" />
     <ClInclude Include="FormatDriveFreeSpaceString.h" />
@@ -27,6 +31,7 @@
     <ClInclude Include="GetIPByHostName.h" />
     <ClInclude Include="GetOSVersion.h" />
     <ClInclude Include="GetProcessIDByProcessName.h" />
+    <ClInclude Include="GetSystemDrive.h" />
     <ClInclude Include="HICON2GdipBitmap.h" />
     <ClInclude Include="IsPathWritable.h" />
     <ClInclude Include="MakeFullPath.h" />
@@ -35,8 +40,11 @@
     <ClInclude Include="Profile.h" />
     <ClInclude Include="RandomString.h" />
     <ClInclude Include="RunAppWait.h" />
+    <ClInclude Include="SetEventByName.h" />
+    <ClInclude Include="SockConnectWithTimeOut.h" />
     <ClInclude Include="TaskBar.h" />
     <ClInclude Include="URLChar.h" />
+    <ClInclude Include="WaitFileNotExist.h" />
     <ClInclude Include="WaitProcessByProcessName.h" />
     <ClInclude Include="WFLib.h" />
     <ClInclude Include="WFLibConfig.h" />
@@ -44,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base64.cpp" />
+    <ClCompile Include="BuildDirectoryPath.cpp" />
+    <ClCompile Include="BuildTempFile.cpp" />
     <ClCompile Include="CalcFileSize.cpp" />
     <ClCompile Include="CalcTextSize.cpp" />
     <ClCompile Include="CIconCache.cpp" />
@@ -51,6 +61,8 @@
     <ClCompile Include="CStartMenuProgramGroup.cpp" />
     <ClCompile Include="CUnicodeString2StdMultiByteString.cpp" />
     <ClCompile Include="DeleteDesktopFile.cpp" />
+    <ClCompile Include="DeleteFileRecurse.cpp" />
+    <ClCompile Include="DeleteModuleDirectoryFile.cpp" />
     <ClCompile Include="EnumFont.cpp" />
     <ClCompile Include="ExecuteWarning.cpp" />
     <ClCompile Include="FormatDriveFreeSpaceString.cpp" />
@@ -59,6 +71,7 @@
     <ClCompile Include="GetIPByHostName.cpp" />
     <ClCompile Include="GetOSVersion.cpp" />
     <ClCompile Include="GetProcessIDByProcessName.cpp" />
+    <ClCompile Include="GetSystemDrive.cpp" />
     <ClCompile Include="HICON2GdipBitmap.cpp" />
     <ClCompile Include="IsPathWritable.cpp" />
     <ClCompile Include="MakeFullPath.cpp" />
@@ -66,8 +79,11 @@
     <ClCompile Include="PostProcessWndMsg.cpp" />
     <ClCompile Include="RandomString.cpp" />
     <ClCompile Include="RunAppWait.cpp" />
+    <ClCompile Include="SetEventByName.cpp" />
+    <ClCompile Include="SockConnectWithTimeOut.cpp" />
     <ClCompile Include="TaskBar.cpp" />
     <ClCompile Include="URLChar.cpp" />
+    <ClCompile Include="WaitFileNotExist.cpp" />
     <ClCompile Include="WaitProcessByProcessName.cpp" />
     <ClCompile Include="WindowMessageFilter.cpp" />
   </ItemGroup>
