@@ -86,6 +86,21 @@
     <ClInclude Include="PostProcessWndMsg.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="WaitProcessByProcessName.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteDesktopFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetProcessIDByProcessName.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CStartMenuProgramGroup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RunAppWait.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base64.cpp">
@@ -152,6 +167,21 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="PostProcessWndMsg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitProcessByProcessName.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteDesktopFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GetProcessIDByProcessName.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CStartMenuProgramGroup.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RunAppWait.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

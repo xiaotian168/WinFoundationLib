@@ -16,7 +16,9 @@
     <ClInclude Include="CalcTextSize.h" />
     <ClInclude Include="CIconCache.h" />
     <ClInclude Include="CreateShortcut.h" />
+    <ClInclude Include="CStartMenuProgramGroup.h" />
     <ClInclude Include="CUnicodeString2StdMultiByteString.h" />
+    <ClInclude Include="DeleteDesktopFile.h" />
     <ClInclude Include="EnumFont.h" />
     <ClInclude Include="ExecuteWarning.h" />
     <ClInclude Include="FormatDriveFreeSpaceString.h" />
@@ -24,6 +26,7 @@
     <ClInclude Include="GetFileList.h" />
     <ClInclude Include="GetIPByHostName.h" />
     <ClInclude Include="GetOSVersion.h" />
+    <ClInclude Include="GetProcessIDByProcessName.h" />
     <ClInclude Include="HICON2GdipBitmap.h" />
     <ClInclude Include="IsPathWritable.h" />
     <ClInclude Include="MakeFullPath.h" />
@@ -31,8 +34,10 @@
     <ClInclude Include="PostProcessWndMsg.h" />
     <ClInclude Include="Profile.h" />
     <ClInclude Include="RandomString.h" />
+    <ClInclude Include="RunAppWait.h" />
     <ClInclude Include="TaskBar.h" />
     <ClInclude Include="URLChar.h" />
+    <ClInclude Include="WaitProcessByProcessName.h" />
     <ClInclude Include="WFLib.h" />
     <ClInclude Include="WFLibConfig.h" />
     <ClInclude Include="WindowMessageFilter.h" />
@@ -43,7 +48,9 @@
     <ClCompile Include="CalcTextSize.cpp" />
     <ClCompile Include="CIconCache.cpp" />
     <ClCompile Include="CreateShortcut.cpp" />
+    <ClCompile Include="CStartMenuProgramGroup.cpp" />
     <ClCompile Include="CUnicodeString2StdMultiByteString.cpp" />
+    <ClCompile Include="DeleteDesktopFile.cpp" />
     <ClCompile Include="EnumFont.cpp" />
     <ClCompile Include="ExecuteWarning.cpp" />
     <ClCompile Include="FormatDriveFreeSpaceString.cpp" />
@@ -51,14 +58,17 @@
     <ClCompile Include="GetFileList.cpp" />
     <ClCompile Include="GetIPByHostName.cpp" />
     <ClCompile Include="GetOSVersion.cpp" />
+    <ClCompile Include="GetProcessIDByProcessName.cpp" />
     <ClCompile Include="HICON2GdipBitmap.cpp" />
     <ClCompile Include="IsPathWritable.cpp" />
     <ClCompile Include="MakeFullPath.cpp" />
     <ClCompile Include="ModuleRegPath.cpp" />
     <ClCompile Include="PostProcessWndMsg.cpp" />
     <ClCompile Include="RandomString.cpp" />
+    <ClCompile Include="RunAppWait.cpp" />
     <ClCompile Include="TaskBar.cpp" />
     <ClCompile Include="URLChar.cpp" />
+    <ClCompile Include="WaitProcessByProcessName.cpp" />
     <ClCompile Include="WindowMessageFilter.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -71,7 +81,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
